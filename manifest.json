@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "StackOverflow-tracker-vraj",
+  "version": "0.1",
+  "permissions": ["tabs","http://*/*","https://*/*"],
+  "content_scripts": 
+  [
+  {
+    "matches": [
+      "*://*.stackoverflow.com/*"
+    ],
+    "js": ["jquery-min.js","content.js"]
+  }
+  ],
+  "page_action": {
+  	"default_icon": "icon.png"
+  },
+  "background": {
+  "scripts": ["eventPage.js"]
+  }
+}
+
