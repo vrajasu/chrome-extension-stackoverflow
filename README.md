@@ -17,14 +17,8 @@ Here is a chrome based extension that tracks user activity on stackoverflow like
 6. The Tracker can send data dumps to your API as needed.
 7. The Tracker is only activated when  StackOverFlow is opened.
 
-<<<<<<< HEAD
 Future work which will involve visualizing a user's logs
 
 ## Installation
-The code can be downloaded and loaded into Chrome by going to chrome://extensions and enabling Developer Mode and then clicking on Load unpacked extension
-=======
-Future work which will involve visualizing a user's logs.
-
-## Installation
 The code can be downloaded and loaded into Chrome by going to chrome://extensions and enabling Developer Mode and then clicking on Load unpacked extension.
->>>>>>> 0128fe491af148c8da38546e0243fc7def0c6d90
+
