@@ -32,7 +32,7 @@ var username=null;
 
 //getting username from session to know for which users we have to log data.
 $.ajax({
-    url : "http://127.0.0.1:8080/api/current_user_remote",
+    url : "https://adaptive-web-vraj.herokuapp.com/api/current_user_remote",
     type : "get",
     async: false,
     success : function(data) {
@@ -270,6 +270,7 @@ if(tagsArray.length>0)
 			action:'tags_seen',
 			parameters:{
 				tags:tagsArray,
+				timestamp:new Date().toLocaleString(),
 				username:username
 			}
 		}
@@ -309,6 +310,7 @@ if(search_term)
 			search_term:search_term || '',
 			username:username,
 			timestamp:new Date().toLocaleString()
+
 		}
 		}
 		a=null;
@@ -322,7 +324,7 @@ if(search_term)
 
 //send the data logged to the server.
 function prepareRequest(req){
-		$.post('http://127.0.0.1:8080/api/clicks',req);	
+		$.post('http://adaptive-web-vraj.herokuapp.com/api/clicks',req);	
         return true;
 }
 
